@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/stylle.css">
+    <link rel="stylesheet" href="./css/w3.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<title>Guia Muito +</title>
+
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+
+
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
+</head>
+
+<body>
+
+<header id="hero-top" data-aos="fade-down">
+
+    <div class="container"> 
+
+    <nav class="nav-bar">
+    <div class="logo">
+    <a href="#"><img src="./img/logo-guia.png"  alt="logo Guia Muito +" title="Grupo Guia Muito +"></a>
+    </div>
+
+    <div class="nav-list">
+    <ul>
+    
+    <li class="nav-item">
+    <a href="#" class="nav-link" onclick="document.getElementById('contato').style.display='block'">Contato</a></li>
+
+    <li class="nav-item">
+    <a href="#" class="nav-link" onclick="document.getElementById('sobre').style.display='block'">Sobre</a></li>
+
+    <li class="nav-item"><a href="#seguro" class="nav-link">Baixar Guia<img src="./img/pdf.png" class="icone"></a></li>
+    
+        
+    </ul>    
+    </div>
+                
+    </nav>
+
+    </div>
+
+</header>
+
+<main class="s-hero" data-aos="fade-up">
+<div class="container"> 
+
+<div class="w3-content w3-display-container" style="max-width:1163px;">
+  <img class="mySlides" src="./img/slide01.jpg" style="width:100%; border-radius: 8px;">
+  <img class="mySlides" src="./img/slide02.jpg" style="width:100%; border-radius: 8px;">
+  <img class="mySlides" src="./img/slide03.jpg" style="width:100%; border-radius: 8px;">
+  <img class="mySlides" src="./img/slide04.jpg" style="width:100%; border-radius: 8px;">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</div>
+</main>
+
+
+
+<section class="s-cards" data-aos="fade-down">
+<div class="container">
+
+<div class="text-left-card">
+<div>
+<h2>Lorem ipsum dolor sit amet</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+
+<p class="citacao">O seu <strong>guia</strong> de <strong>anúncios</strong>!</p>
+</div>
+
+<div class="card-1">
+
+<div class="card-2">
+<img src="./img/restaurante01.jpg" alt="Restaurante">
+<h3><img src="./img/restaurant.png" class="icone2">Pizzaria - Salvador BA</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<a class="btn3 href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Portaria%20Remota" target="_blank">Fazer pedido →</a>
+</div>
+
+<div class="card-2">
+<img src="./img/restaurante02.jpg" alt="Restaurante">
+<h3><img src="./img/restaurant.png" class="icone2">Restaurante - Salvador BA</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+<a class="btn3 href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Segurança%20Eletrônica" target="_blank">Fazer pedido →</a>
+</div>
+
+<div class="card-2">
+<img src="./img/restaurante03.jpg" alt="Restaurante">
+<h3><img src="./img/restaurant.png" class="icone2">Restaurante - Salvador BA</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<a class="btn3 href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Alarme%20Monitorado" target="_blank">Fazer pedido →</a>
+</div>
+
+<div class="card-2">
+<img src="./img/loja01.jpg" alt="Loja">
+<h3><img src="./img/bag.png" class="icone2">Loja - Salvador BA</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<a class="btn3 href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Porteiro" target="_blank">Comprar agora →</a>
+</div>
+
+<div class="card-2">
+<img src="./img/loja02.jpg" alt="Loja">
+<h3><img src="./img/bag.png" class="icone2">Loja - Salvador BA</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+<a  class="btn3 href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Limpeza%20Empresarial" target="_blank">Comprar agora →</a>
+</div>
+
+<div class="card-2">
+<img src="./img/loja03.jpg" alt="Loja">
+<h3><img src="./img/bag.png" class="icone2">Loja - Salvador BA</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<a class="btn3" href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Copeira" target="_blank">Comprar agora →</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<footer id="service" data-aos="fade-up">
+<div class="container">
+
+<div class="scroll-text">
+<h2>Categorias</h2>
+<a href="#hero-top"><img src="./img/scroll-top.svg" alt="Scrollup" title="Scroll-Up"></a>
+</div>
+
+<div class="list">
+<ul>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Alarme%20Monitorado" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Porteiro%2024Hrs" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Controlador-de-Acesso" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Faxineira" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Suporte-Administrativo" target="_blank">Lorem ipsum </a></li>
+</ul>
+
+<ul>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Portaria%20Remota" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Telefonista" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Recepcionista" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Ascensorista" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Segurança Eletrônica" target="_blank">Lorem ipsum </a></li>
+</ul>
+
+<ul>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Carregador" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Motorista" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Copeira" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Diarista" target="_blank">Lorem ipsum </a></li>
+<li><a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20cotação%20Limpeza-Empresarial" target="_blank">Lorem ipsum </a></li>
+</ul>
+</div>
+
+
+<div class="social">
+
+<div class="flags"> 
+<img src="./img/bandeira-ba.png" alt="Bahia" title="Bahia">
+
+</div>
+
+<ul class="redes">
+<li><a href="https://instagram.com/dcontroll" target="_blank"><img src="./img/instagram.png" alt="Instagram" title="Instagram"></a></li>
+<li><a href="https://facebook.com/dcontroll" target="_blank"><img src="./img/facebook.png" alt="Facebook" title="Facebook"></a></li>
+<li><a href="https://goo.gl/maps/VKiBWBvsDVSEASFg6" target="_blank"><img src="./img/map.png" alt="Google maps" title="Google Maps"></a></li>
+</ul>
+</div>
+
+</div>
+</footer>
+
+
+<section class="garantia" id="seguro" data-aos="fade-up">
+<div class="container">
+
+<img src="./img/capa-guia.png" alt="icone garantia" title="icone garantia">
+
+<div class="text-garantia">
+<h2>Baixe nosso guia de promoções!</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+</div>
+
+<a href="#" onclick="document.getElementById('garantia').style.display='block'"><button class="btn2">BAIXAR GUIA <img src="./img/pdf.png" class="icone"></button></a>
+
+</div>
+</section>
+
+
+<div class="container">
+<p class="powered">Powered by <a href="https://joiltonmelo.com.br" target="_blank"><img src="./img/logo-jm.png" alt="Joilton Melo"></a></p>
+</div>
+
+
+<!-- Inicio Modal Box Cards -->
+<div>
+
+  <div id="sobre" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('sobre').style.display='none'" class="w3-button">&times;</span>
+
+        <h4>Sobre o Guia Muito +</h4> 
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              
+      </div>
+    </div>
+  </div>
+
+  <div id="contato" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('contato').style.display='none'" class="w3-button">&times;</span>
+
+        <h4>Contato</h4> 
+ 
+        <ul style="line-height: 40px;">
+        <li><img src="./img/whatsapp.png" alt="Whatsapp"><h2 style="font-weight: bold;"><a href="https://wa.me/5511932202886" target="_blank">11 91234-4444</a></h2></li>
+        <li><img src="./img/phone.png" alt="Fixo"> <h2 style="font-weight: bold;"><a href="tel:1131642160" target="_blank">11 1234-4444</a></h2></li>
+        <li><img src="./img/email.png" alt="Email"> <h4><a href="mailto:contato@dcontroll.com.br" target="_blank">contato@dcontroll.com.br</a></h4></li>
+        </ul>
+        
+        <a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20fazer%20uma%20cotação..." target="_blank">
+        <button class="btn">CHAMAR NO WHATSAPP →</button></a>
+
+        <br><br>
+        <h4>Onde estamos</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1114233546587!2d-46.602062084386276!3d-23.564441367592497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce594e243756b5%3A0x73fe5771a30c3164!2sR.%20Tabajaras%2C%20439%20-%20Mooca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003121-010!5e0!3m2!1spt-BR!2sbr!4v1661964252420!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Final Modal Box Cards -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/5511932202886?text=Olá!%20Gostaria%20de%20fazer%20uma%20cotação..." style="position:fixed;width:50px;height:50px;bottom:10px;right:10px;background-color:#e41a23;color:#fbc406;border-radius:5px;text-align:center;font-size:30px; z-index:1000;" target="_blank" title="Whatsapp">
+<i style="margin-top:11px;" class="fa fa-whatsapp"></i>
+</a>
+
+<!-- Script Animação fade AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/main.js"></script>
+<!-- Script Animação fade AOS -->
+
+</body>
+</html>
+
+<!-- UI Design & Front-end by Joilton Melo -->
